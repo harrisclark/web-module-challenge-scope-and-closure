@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+    Closure is using a function within a function to return a value. That value will only be acted upon by the inner function
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,9 +83,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+    Closure is used in the anonymouse function. const newRoll will aways be a new value on each invocation of personalDice()
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+    The name "Dan" will be the same in both invocations but they will return a different newRoll value each time
 c. What is the lexical scope of `newRoll`? 
-
+    Any value/variable within personalDice
 
 ### Task 3 - Stretch Goals
 
